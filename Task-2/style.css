@@ -1,0 +1,150 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+input,textarea,button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background-color: #130f0f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: #f80808;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.grid-container>section {
+    background: #f4f4f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+.task-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.task-container input,
+.task-container button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+.task-container button {
+    background: #050505;
+    color: white;
+    border: none;
+    cursor: pointer;        
+}
+.task-container button:hover{
+    background-color: #f80808;
+}
+.task-container ul {
+    list-style: none;
+    padding: 0;
+}
+.task-container li {
+    background: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+.task-container li button {
+    background: #111010;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    width: max-content;
+}
+.icons{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    nav ul {
+        all: unset;
+        position: fixed;
+        padding-top: 50px;
+        top: 0px;
+        list-style: none;
+        right: -230px;
+        width: 230px;
+        height: 100vh;
+        background-color: rgb(16, 66, 173);
+        z-index: 2;
+        transition: .5s linear;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav .icons {
+        display: block;
+        font-size: 27px;
+        position: absolute;
+        top: 37px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
