@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Project</h1>
+    </header>
+
+    <section class="quiz-section">
+        <h2> Quiz</h2>
+        <div id="quiz-container">
+            <p id="question">Loading...</p>
+            <div id="options"></div>
+            <button id="next-btn">Next</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Images </h2>
+        <div class="photo">
+            <button id="prev">&#10094;</button>
+            <img id="img" src="image1.jpg" alt="Carousel Image">
+            <button id="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="api-section">
+        <h2>Weather API Data</h2>
+        <button id="fetch-weather">Get Weather</button>
+        <div id="weather-output">
+            <p id="weather-data">Click the button to fetch weather data.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
